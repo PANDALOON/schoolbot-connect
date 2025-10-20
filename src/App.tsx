@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import Integrations from "./pages/Integrations";
 import Users from "./pages/Users";
 import GoogleClassroomSetup from "./pages/GoogleClassroomSetup";
+import GmailSetup from "./pages/GmailSetup";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/dashboard/users" element={<Users />} />
           <Route path="/dashboard/settings" element={<Settings />} />
           <Route path="/setup/google-classroom" element={<GoogleClassroomSetup />} />
+          <Route path="/setup/gmail" element={<GmailSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
