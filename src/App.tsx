@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import Integrations from "./pages/Integrations";
 import Users from "./pages/Users";
 import GoogleClassroomSetup from "./pages/GoogleClassroomSetup";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/dashboard/integrations" element={<Integrations />} />
           <Route path="/dashboard/users" element={<Users />} />
+          <Route path="/dashboard/settings" element={<Settings />} />
           <Route path="/setup/google-classroom" element={<GoogleClassroomSetup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
